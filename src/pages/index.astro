@@ -213,9 +213,20 @@
       };
       pane.addButton({ title: "Save .png" }).on("click", saveImage);
 
+      pane.addBlade({
+        view: "separator",
+      });
+
       pane
         .addButton({ title: "A project by Eva Decker" })
         .on("click", () => (window.location.href = "https://eva.town"));
+
+      pane
+        .addButton({ title: "View on GitHub" })
+        .on(
+          "click",
+          () => (window.location.href = "https://github.com/evadecker/composed")
+        );
     };
 
     p.draw = () => {
