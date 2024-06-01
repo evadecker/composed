@@ -14,6 +14,15 @@ importers:
       astro:
         specifier: ^4.9.2
         version: 4.9.2(typescript@5.4.5)
+      p5:
+        specifier: ^1.9.4
+        version: 1.9.4
+      p5.brush:
+        specifier: ^1.1.2
+        version: 1.1.2(p5@1.9.4)
+      tweakpane:
+        specifier: ^4.0.3
+        version: 4.0.3
       typescript:
         specifier: ^5.4.5
         version: 5.4.5
@@ -1894,6 +1903,10 @@ packages:
     engines: {node: '>=12'}
     dev: false
 
+  /esm-seedrandom@3.0.5:
+    resolution: {integrity: sha512-pMAq0mFIr5JQ3Ihbng7EBLMJ+llMbaDKkiG44pqbSXS0NIZWtEANpOpxb5s6Q8Q2R562P26qMHPv8YtP/NHh9g==}
+    dev: false
+
   /esprima@4.0.1:
     resolution: {integrity: sha512-eGuFFw7Upda+g4p+QHvnW0RyTX/SVeJBDM/gCtMARO0cLuT2HcEKnTPvhjV6aGeqrCB/sbNop0Kszm0jsaWU4A==}
     engines: {node: '>=4'}
@@ -2936,6 +2949,19 @@ packages:
     engines: {node: '>=6'}
     dev: false
 
+  /p5.brush@1.1.2(p5@1.9.4):
+    resolution: {integrity: sha512-odDgTY8+KkvtVEV95YT16VY976kJguAgsbpHsXdwkaLUUEXsiWwe51mRcvRvDYriaQ9BCSIxIHey321qKtm93Q==}
+    peerDependencies:
+      p5: ^1.9.0
+    dependencies:
+      esm-seedrandom: 3.0.5
+      p5: 1.9.4
+    dev: false
+
+  /p5@1.9.4:
+    resolution: {integrity: sha512-dhiZ9mvXx5pm8eRwml34xbeUwce4uS9Q2za0YOHg2p97N9iNAb5hTIHAt77CHKHXAh6A16u/oalz5egRfTyFWw==}
+    dev: false
+
   /parse-latin@5.0.1:
     resolution: {integrity: sha512-b/K8ExXaWC9t34kKeDV8kGXBkXZ1HCSAZRYE7HR14eA1GlXX5L8iWhs8USJNhQU9q5ci413jCKF0gOyovvyRBg==}
     dependencies:
@@ -3447,6 +3473,10 @@ packages:
     requiresBuild: true
     dev: false
     optional: true
+
+  /tweakpane@4.0.3:
+    resolution: {integrity: sha512-BlcWOAe8oe4c+k9pmLBARGdWB6MVZMszayekkixQXTgkxTaYoTUpHpwVEp+3HkoamZkomodpbBf0CkguIHTgLg==}
+    dev: false
 
   /type-fest@2.19.0:
     resolution: {integrity: sha512-RAH822pAdBgcNMAfWnCBU3CFZcfZ/i1eZjwFU/dsLKumyuuP3niueg2UAukXYF0E2AAoc82ZSSf9J0WQBinzHA==}
